@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Top 5 Tamil Christian Songs || Music Player </title>
+       <!-- keywords  -->
+       <meta name="keywords" content="christian music, tamil christian songs, mp3 songs for top 5 christian">
+       <!-- description for page -->
+       <meta name="description" content="tamil christian music and songs top 5 in the tamil industry">
+       <!-- author of the page -->
+       <meta name="author" content="Praveen K">
+       <!-- favicon -->
+       <link rel="icon" href="./img/musiclogo.png" type="image/png">
+       <!-- custom css -->
+       <link rel="stylesheet" href="design.css">
+       <!-- google fonts -->
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+       <!-- fonts awesome -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+       <!-- <style type="text/css">
+              .popup 
+              {
+                    background-color: white;
+                    width: 300px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    padding: 30px 40px;
+                    border-radius: 10px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 1.2rem;
+                    display: none;
+              }
+              .popup button 
+              {
+                     background-color: red;
+                     display: block;
+                     margin: 0 0 20px auto;
+                     padding: 5px 10px;
+                     font-size: 25px;
+                     outline: none;
+                     background-color: silver;
+                     border: none;
+                     border-radius: 50%;
+                     cursor: pointer;
+              }
+              .popup a 
+              {
+                    margin: 10px auto;
+                    display: block;
+                    background-color: red;
+                    width: 100px;
+                    text-align: center;
+                    color: white;
+                    text-decoration: none;
+                    padding: 7px 0;
+                    font-family: monospace;
+                    font-size: 1.1rem;
+                    border: 1px solid transparent;
+
+              }
+       </style> -->
+
+</head>
+<body>
+
+
+        
+
+              <div class="container" id="container">
+                     <div class="heading">
+                            <h1>Top 5 trending christian  songs</h1>
+                     </div>
+                      <div class="music-logo">
+                            <img src="./musiclogo.png" alt="music-logo" width="300px" class="logo" id="musicIcon">
+                            <p class="speed" title="speed" id="speed">1x</p>
+                      </div> 
+                      <div class="current_song_title" id="current_song_title">
+                             <p class="song_title" id="songTitle"> </p>
+                             <input type="range" id="songSlider" class="currentProgress" onchange="jumpTo()">
+                      </div>
+                      <div class="songDuration" id="songDuration">
+                            <p id="currentTime">00:00</p>
+                            <p id="totalTime">00:00</p>
+                      </div>
+                      <div class="songs_controls" id="songs_controls">
+                            <i class="fa-solid fa-caret-left small" title="Previous songs" onclick="previousSong();"></i>
+                            <i class="fa-solid fa-backward-step playback" title="Backward playback" onclick="decPlayback();"></i>
+                            <i class="fa-solid fa-music large" title="Play and Resume" id="toggleButton" onclick="togglePlayer();"></i>
+                            <i class="fa-solid fa-forward-step playback" title="Forward playback" onclick="incPlayback();"></i>
+                            <i class="fa-solid fa-caret-right small" title="Next Songs" onclick="nextsong();" id="forwardSong"></i>
+                      </div>
+                      <div class="volume_container">
+                            <i class="fa-solid fa-volume-high volume" title="volume"></i>
+                            <div class="next_progress" id="next_progress">
+                                   <input type="range" id="volumeSlider" value="0.5" step="0.01" max="1.0" onchange="updateVolume();">
+                            </div>
+                            <div class="next_songs">
+                                   <p class="nextSong" id="nextSong"><span>Up  Next:</span> </p>
+                            </div>
+                      </div>
+              </div>
+
+
+                <!-- popup  -->
+
+          <!-- <div class="popup">
+              <button id="close">&times;</button>
+              <h2>Top 5 Christian Tamil Songs in Trending</h2>
+              <a href="./index.html" class="music-click">Click</a>
+          </div> -->
+
+
+             
+       
+   <!-- <h1>hello</h1> -->
+       <!-- custom js -->
+       <script type="text/javascript" src="./musicLive.js"></script>
+
+</body>
+</html>
